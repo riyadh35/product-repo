@@ -1,0 +1,301 @@
+/* google font ar link 
+font-family: 'Dancing Script',
+cursive;
+font-family: 'Josefin Sans',
+sans-serif;
+font-family: 'Roboto Slab',
+serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans&family=Roboto+Slab:wght@300&display=swap');
+
+/* common style */
+body {
+    margin: 0;
+    padding: 0;
+    background: #dedbdb86;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/*----------------------------
+ website styles
+------------------------- */
+.container {
+    height: 100%;
+    display: flex;
+    /* padding-bottom: 150px; */
+}
+
+.logo h1 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 30px;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+nav>ul {
+    display: flex;
+    list-style: none;
+    float: right;
+    margin-top: -70px;
+    margin-right: 0px;
+}
+
+nav>ul>li {
+    margin: 10px;
+    font-family: poppins;
+
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: black;
+}
+
+/*------------------
+ section styles
+------------------- */
+
+
+.top-side {
+    width: 50%;
+    float: left;
+    padding: 2% 4%;
+    margin-top: 100px;
+}
+
+
+
+
+.top-side h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.top-side p {
+    font-weight: 700;
+    font-size: 17px;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.799);
+    margin-bottom: 40px;
+}
+
+.top-side a {
+    text-decoration: none;
+    color: white;
+    background-color: #E02C6D;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 41px;
+}
+
+.top-side img {
+    width: 100%;
+    margin-top: -50px;
+}
+
+.top-side img {
+    background-image: url(./influencer-gear-main/images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+/*-----------------
+ logo work styles
+------------------------- */
+
+.logo-web {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: -20px;
+}
+
+.logo-web img {
+    width: 9%;
+    /* margin-top: -30px; */
+}
+
+/*--------------------
+ product styles
+------------------- */
+
+.product-d {
+    display: grid;
+    margin: 30px 90px;
+
+}
+
+.pc {
+    display: flex;
+    justify-content: center;
+    color: #E02C6D;
+    font-weight: 700;
+}
+
+.top-product {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 40px;
+    margin-top: 30px;
+
+}
+
+.top-product .product {
+    width: 203px;
+    height: 345px;
+    padding: 16px 16px;
+    box-shadow: 1px 1px 1px 1px #AAAAAA;
+    background-color: rgba(255, 255, 255, 0.438);
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.thumbnail img {
+    width: 200px;
+    height: 156px;
+    border-radius: 10px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    margin-top: -17px;
+}
+
+.details p {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 10px;
+    margin-left: 0px;
+}
+
+.icon p {
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.icon .icon .fa-star {
+    color: #FB8200;
+}
+
+.icon .half {
+    color: #FB8200;
+}
+
+.product-author {
+    text-decoration: none;
+    padding: 40px 50px;
+    text-align: right;
+}
+
+.product-author a {
+    text-decoration: none;
+    color: #E02C6D;
+    /* background-color: #FB8200; */
+    font-weight: 700;
+
+}
+
+
+/*-----------------------------------------
+
+
+banner type styles
+
+
+
+---------------------------- */
+.last-top {
+    display: flex;
+}
+
+#about {
+    /* margin-top: 10px; */
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: black;
+}
+
+.last img {
+    width: 80%;
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.751);
+}
+
+.about {
+    padding-top: 10px;
+}
+
+.social {
+    padding-bottom: 10px;
+    margin-top: -10px;
+}
+
+/* --------------------
+Responsive layout
+------------------- */
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+        display: grid;
+        height: 100%;
+        /* flex-direction: colu mn; */
+    }
+
+    nav>ul,
+    .logo-web {
+        display: none;
+    }
+
+    .top-product,
+    .last-top {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+    .top-side {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* ------------------------
+tablet
+------------------------- */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    body {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .container {
+        display: grid;
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+
+    .top-product {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
